@@ -91,14 +91,13 @@ export const umlData = [
         groupe: 2,
         name: " Diagrammes d'apercu d'interaction",
         picture: "https://www.sparxsystems.fr/images/screenshots/interaction-diagram.png",
-        description: "Le diagramme d'apercu d'interaction est une forme d'un diagramme d'activité. Dans lequel les noueds représentent des diagrammes d'interaction"
+        description: "Le diagramme d'apercu d'interaction est une forme d'un diagramme d'activité. Dans lequel les noueds représentent des diagrammes d'interaction. Les vues d'ensemble sont par exemple : initiale, finale, décision , fusionner, fourchette."
     },
     {
         id: 14,
-        groupe: 2,
-        name: " Diagrammes de Vue d'ensemble d'interaction",
-        picture: "fkzdfervg",
-        description: "loremIpsum"
+        groupe: 1,
+        name: " Diagrammes de Profil",
+        picture: "	https://www.sparxsystems.fr/images/screenshots/uml-profile-import.png",
+        description: "Le Diagramme de Profil fournit un mécanisme d'éxtenstion générique pour construire des modèles UML dans des domaines particuliers. Il sont fondés sur les stéréotypes et les valeurs. "
     }
-
 ]
