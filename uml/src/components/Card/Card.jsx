@@ -21,6 +21,7 @@ export const CardPicture = ({ children, src, alt }) => {
         </>
     )
 }
+
 export const CardTitle = ({ children }) => {
     return (
         <div>
