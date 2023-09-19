@@ -1,14 +1,15 @@
 'use client'
 import { umlData } from "@/data/Diagram";
-import { CardTitle, CardDescription } from "@/components/Card/Card";
+import { CardTitle, Card } from "@/components/Card/Card";
 export const Cards = () => {
-    // const [allData] = useState(UmlData);
     console.table("all", umlData)
     return (
         <div>
-            {umlData.map((data) => (
+            {umlData.map((data, id) => (
                 <>
-                    <CardTitle> {data.id}. {data.name}</CardTitle>
+                    <Card key={id.id}>
+                        <CardTitle > {data.id}. {data.name}</CardTitle>
+                    </Card>
                 </>
 
             ))}

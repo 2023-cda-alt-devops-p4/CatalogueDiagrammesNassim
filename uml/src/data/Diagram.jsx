@@ -6,22 +6,22 @@ export const umlData = [
         id: 1,
         groupe: 1,
         name: "Diagrammes de Paquetage.",
-        picture: "fkzdfervg",
-        description: "loremIpsum"
+        picture: "https://www.sparxsystems.fr/images/screenshots/package-diagram.png",
+        description: "Le diagramme de paquetage reflete une organisation de paquetage et de leur élements. Il est utiliser pour représenter des élements de classe.",
     },
     {
         id: 2,
         groupe: 1,
-        name: "Diagrammes Structurels.",
-        picture: "fkzdfervg",
-        description: "loremIpsum"
+        name: "Diagramme de classe.",
+        picture: "https://www.sparxsystems.fr/images/screenshots/classe-diagram.jpg",
+        description: "Le diagram de classe consiste a montrer les blocs de construction de tous système orienté objet. Le diagram de classe et souvent le plus utile pour illuster les relations entre les classes et les interfaces."
     },
     {
         id: 3,
         groupe: 1,
         name: "Diagrammes d'Objets.",
-        picture: "fkzdfervg",
-        description: "loremIpsum"
+        picture: "https://www.sparxsystems.fr/images/screenshots/object-diagram.png",
+        description: ""
     },
     {
         id: 4,

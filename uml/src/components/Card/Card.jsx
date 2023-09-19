@@ -1,8 +1,8 @@
 import Image from 'next/image'
 
-export const Card = ({ children }) => {
+export const Card = ({ children, key }) => {
     return (
-        <div>
+        <div key={key}>
             {children}
         </div>
     )
