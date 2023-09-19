@@ -1,7 +1,7 @@
 // groupe 1 = Diagrammes de Modelisation Structurel
 // groupe 2 = Diagrammes de Modelisation Comportementaux
 
-const UmlData = [
+export const umlData = [
     {
         id: 1,
         groupe: 1,
@@ -99,22 +99,6 @@ const UmlData = [
         picture: "fkzdfervg",
         description: "loremIpsum"
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 ]
