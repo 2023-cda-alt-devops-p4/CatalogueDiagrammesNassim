@@ -1,10 +1,10 @@
 import { Umls } from "@/containers/Umls/Umls"
-import { Header } from "@/components/Header/Header"
+import { HeaderContainer } from "@/containers/header/HeaderContainer"
 
 export default function Home() {
   return (
     <main>
-      <Header />
+      <HeaderContainer />
       <div> Hello World le Diagram : </div>
       <Umls />
     </main>

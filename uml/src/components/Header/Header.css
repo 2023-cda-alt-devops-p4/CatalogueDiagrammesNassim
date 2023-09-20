@@ -1,20 +1,4 @@
-.header_container {
-    display: flex;
-    border: solid rgb(238, 245, 238);
-}
+.header {
+    border: solid 1px rgba(227, 194, 194, 0.863);
 
-.header_logo {
-    display: flex;
-    justify-content: flex-start;
-}
-
-.header_container_links {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.header_link {
-    padding-left: 15px;
-    padding-right: 15px;
 }
