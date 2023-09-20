@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import './Card.css';
 
 export const Card = ({ children, key }) => {
     return (
@@ -8,17 +9,14 @@ export const Card = ({ children, key }) => {
     )
 }
 
-export const CardPicture = ({ children, src, alt }) => {
+export const CardPicture = ({ src, alt }) => {
     return (
-        <>
-            <Image
-                src={src}
-                width={500}
-                height={500}
-                alt={alt}
-            />
-            {children}
-        </>
+        <Image
+            src={src}
+            width={500}
+            height={500}
+            alt={alt}
+        />
     )
 }
 

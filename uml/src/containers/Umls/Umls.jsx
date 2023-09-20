@@ -2,15 +2,14 @@
 import { umlData } from "@/data/Diagram";
 import { CardTitle, Card } from "@/components/Card/Card";
 
-export const Cards = () => {
+export const Umls = () => {
     console.table("all", umlData)
     return (
         <div>
-            {umlData.map((data, id) => (
+            {umlData.map((item) => (
                 <>
-                    <Card key={id.id}>
-                        <CardTitle > {data.id}. {data.name}</CardTitle>
-
+                    <Card key={item.id}>
+                        <CardTitle > {item.id}. {item.name}</CardTitle>
                     </Card>
                 </>
 
