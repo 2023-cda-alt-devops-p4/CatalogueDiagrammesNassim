@@ -1,10 +1,23 @@
+import Image from 'next/image'
 import React from 'react'
+import Logo from '../../../public/uml-logo.jpg'
 import './Header.css'
 
-const Header = ({ children }) => {
+export const Header = ({ children }) => {
     return (
-        <header>{children}</header>
+        <header>
+            <HeaderLogo />
+            {children}</header>
     )
 }
 
-export default Header
+export const HeaderLogo = () => {
+    return (
+        <Image
+            src={Logo}
+            width={50}
+            height={50}
+            alt="Logo"
+        />
+    )
+}
