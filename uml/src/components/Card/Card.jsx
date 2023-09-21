@@ -10,6 +10,7 @@ export const Card = ({ children, size, design }) => {
 }
 
 export const CardPicture = ({ src, alt }) => {
+
     return (
         <Image
             src={src}
@@ -35,9 +36,9 @@ export const CardDescription = ({ children }) => {
         </div>
     )
 }
-export const CardPosition = ({ children, mobile, tablette }) => {
+export const CardPosition = ({ children, center }) => {
     return (
-        <div className={`card_position ${mobile} ${tablette}`}>
+        <div className={`card_position ${center}`}>
             {children}
         </div>
     )

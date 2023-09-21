@@ -11,8 +11,8 @@ export const Umls = () => {
             <div className="umls_container">
                 {umlData.map((item) => (
                     <Card size="sizeM" design="design" key={item.id}>
-                        <CardPosition>
-                            <CardPicture src={item.picture} alt={item.name} />
+                        <CardPicture src={item.picture} alt={item.name} />
+                        <CardPosition center="center">
                             <CardTitle>  {item.name}</CardTitle>
                             <Button variant="variant" size="sizeM"> Plus d'info</Button>
                         </CardPosition>
