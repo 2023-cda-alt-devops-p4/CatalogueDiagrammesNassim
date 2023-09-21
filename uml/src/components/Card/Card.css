@@ -4,8 +4,8 @@
 }
 
 .card.sizeM {
-    height: 20vh;
-    width: 25vh;
+    height: 30vh;
+    width: 45vh;
     cursor: pointer;
 }
 
@@ -18,11 +18,12 @@
     font-size: 1rem;
 }
 
+
 @media (max-width: 619px) {
 
     /* mobile card*/
     .card.sizeM {
-        height: 20vh;
+        height: 30vh;
         width: 70vh;
         cursor: pointer;
     }
@@ -32,7 +33,7 @@
 
     /* tablette card */
     .card.sizeM {
-        height: 20vh;
+        height: 30vh;
         width: 85vh;
         cursor: pointer;
     }
