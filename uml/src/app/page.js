@@ -5,7 +5,9 @@ export default function Home() {
   return (
     <main>
       <HeaderContainer />
-      <Umls />
+      <div className="page_border">
+        <Umls />
+      </div>
     </main>
   )
 }

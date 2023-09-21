@@ -1,20 +1,21 @@
 import Image from 'next/image'
 import './Card.css';
 
-export const Card = ({ children }) => {
+export const Card = ({ children, size, design }) => {
     return (
-        <div>
+        <div className={`card ${size} ${design}`}>
             {children}
         </div>
     )
 }
 
 export const CardPicture = ({ src, alt }) => {
+
     return (
         <Image
             src={src}
-            width={500}
-            height={500}
+            width={349}
+            height={150}
             alt={alt}
         />
     )
@@ -22,7 +23,7 @@ export const CardPicture = ({ src, alt }) => {
 
 export const CardTitle = ({ children }) => {
     return (
-        <div>
+        <div className="card_title">
             {children}
         </div>
     )
@@ -31,6 +32,13 @@ export const CardTitle = ({ children }) => {
 export const CardDescription = ({ children }) => {
     return (
         <div>
+            {children}
+        </div>
+    )
+}
+export const CardPosition = ({ children, center }) => {
+    return (
+        <div className={`card_position ${center}`}>
             {children}
         </div>
     )

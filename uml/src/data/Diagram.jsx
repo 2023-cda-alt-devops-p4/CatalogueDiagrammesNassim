@@ -41,7 +41,7 @@ export const umlData = [
         id: 6,
         groupe: 1,
         name: "Diagrammes de Déploiement",
-        picture: "fkzdfervg",
+        picture: "https://www.sparxsystems.fr/images/screenshots/use-case-diagram.png",
         description: "Le diagramme de déploiement et un modèle architectural de temp d'exécution d'un système. Il permet d'afficher la configuration des éléments matériel (noeud) et affiche des élement logiciels."
     },
     {

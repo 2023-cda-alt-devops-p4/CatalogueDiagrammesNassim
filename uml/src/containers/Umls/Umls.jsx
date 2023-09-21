@@ -1,19 +1,24 @@
 'use client'
+import './Umls.css';
 import { umlData } from "@/data/Diagram";
-import { CardTitle, Card } from "@/components/Card/Card";
+import { CardTitle, Card, CardPicture, CardPosition } from "@/components/Card/Card";
+import { Button } from "@/components/button/Button";
 
 export const Umls = () => {
     console.table("all", umlData)
     return (
-        <div>
-            {umlData.map((item) => (
-                <>
-                    <Card key={item.id}>
-                        <CardTitle > {item.id}. {item.name}</CardTitle>
+        <div className="umls_border">
+            <div className="umls_container">
+                {umlData.map((item) => (
+                    <Card size="sizeM" design="design" key={item.id}>
+                        <CardPicture src={item.picture} alt={item.name} />
+                        <CardPosition center="center">
+                            <CardTitle>  {item.name}</CardTitle>
+                            <Button variant="variant" size="sizeM"> Plus d'info</Button>
+                        </CardPosition>
                     </Card>
-                </>
-
-            ))}
+                ))}
+            </div>
         </div>
     )
 }
