@@ -1,0 +1,10 @@
+.btn.variant {
+    border-radius: 10%;
+    background-color: rgba(60, 132, 210, 0.844);
+    color: white;
+}
+
+.btn.sizeM {
+    height: 2rem;
+    width: 5rem;
+}

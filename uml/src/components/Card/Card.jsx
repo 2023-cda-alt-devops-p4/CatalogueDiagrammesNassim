@@ -13,7 +13,7 @@ export const CardPicture = ({ src, alt }) => {
     return (
         <Image
             src={src}
-            width={300}
+            width={349}
             height={150}
             alt={alt}
         />

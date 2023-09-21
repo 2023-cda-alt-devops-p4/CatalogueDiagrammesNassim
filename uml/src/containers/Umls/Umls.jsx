@@ -13,7 +13,7 @@ export const Umls = () => {
                     <Card size="sizeM" design="design" key={item.id}>
                         <CardPicture src={item.picture} alt={item.name} />
                         <CardTitle>  {item.name}</CardTitle>
-                        <Button> Plus d'info</Button>
+                        <Button variant="variant" size="sizeM"> Plus d'info</Button>
                     </Card>
                 ))}
             </div>

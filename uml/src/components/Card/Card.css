@@ -1,11 +1,11 @@
 .card {
-    border-radius: 10px;
+    border-radius: 5px;
     margin: 10px;
 }
 
 .card.sizeM {
     height: 30vh;
-    width: 45vh;
+    /* width: 50vh; */
     cursor: pointer;
 }
 
