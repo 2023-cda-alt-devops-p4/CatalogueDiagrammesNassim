@@ -15,8 +15,8 @@ export const HeaderLogo = () => {
     return (
         <Image
             src={Logo}
-            width={50}
-            height={50}
+            width={100}
+            height={100}
             alt="Logo"
         />
     )

@@ -8,22 +8,21 @@ export const HeaderContainer = () => {
     return (
         <>
             <Header>
-                <div className="header_center">
-                    <div className="header_logo">
-                        <HeaderLogo />
+                <div className="header_logo">
+                    <HeaderLogo />
+                </div>
+                <div className="header_container">
+                    <div className="header_link">
+                        <Link href="/"> Accueil</Link>
                     </div>
-                    <div className="header_container">
-                        <div className="header_link">
-                            <Link href="/"> Accueil</Link>
-                        </div>
-                        <div className="header_link">
-                            <Link href="/UMLS"> UML</Link>
-                        </div>
-                        <div className="header_link">
-                            <Link href="/Merises"> MERISES</Link>
-                        </div>
+                    <div className="header_link">
+                        <Link href="/UMLS"> UML</Link>
+                    </div>
+                    <div className="header_link">
+                        <Link href="/Merises"> MERISES</Link>
                     </div>
                 </div>
+
             </Header>
         </>
     )
