@@ -1,7 +1,11 @@
+import { Umls } from "@/containers/Umls/Umls"
+import { HeaderContainer } from "@/containers/header/HeaderContainer"
+
 export default function Home() {
   return (
     <main>
-      <div> Hello World</div>
+      <HeaderContainer />
+      <Umls />
     </main>
   )
 }

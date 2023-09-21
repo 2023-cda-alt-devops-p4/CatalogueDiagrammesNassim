@@ -1,0 +1,18 @@
+.header_center {
+    display: flex;
+    justify-content: space-around;
+}
+
+.header_container {
+    display: flex;
+}
+
+.header_logo {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.header_link {
+    padding-left: 10px;
+    padding-right: 10px;
+}
