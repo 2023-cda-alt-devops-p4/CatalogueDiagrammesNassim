@@ -35,3 +35,10 @@ export const CardDescription = ({ children }) => {
         </div>
     )
 }
+export const CardPosition = ({ children, mobile, tablette }) => {
+    return (
+        <div className={`card_position ${mobile} ${tablette}`}>
+            {children}
+        </div>
+    )
+}

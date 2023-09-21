@@ -1,7 +1,7 @@
 'use client'
 import './Umls.css';
 import { umlData } from "@/data/Diagram";
-import { CardTitle, Card, CardPicture } from "@/components/Card/Card";
+import { CardTitle, Card, CardPicture, CardPosition } from "@/components/Card/Card";
 import { Button } from "@/components/button/Button";
 
 export const Umls = () => {
@@ -11,9 +11,11 @@ export const Umls = () => {
             <div className="umls_container">
                 {umlData.map((item) => (
                     <Card size="sizeM" design="design" key={item.id}>
-                        <CardPicture src={item.picture} alt={item.name} />
-                        <CardTitle>  {item.name}</CardTitle>
-                        <Button variant="variant" size="sizeM"> Plus d'info</Button>
+                        <CardPosition>
+                            <CardPicture src={item.picture} alt={item.name} />
+                            <CardTitle>  {item.name}</CardTitle>
+                            <Button variant="variant" size="sizeM"> Plus d'info</Button>
+                        </CardPosition>
                     </Card>
                 ))}
             </div>
