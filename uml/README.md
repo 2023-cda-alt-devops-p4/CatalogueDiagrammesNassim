@@ -27,5 +27,5 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 ## Deploy on Vercel
 
- -> project url : https://catalog-jr3d8yv5g-catalog-nd.vercel.app/
+ -> project url : https://catalog-nd.vercel.app/
 
