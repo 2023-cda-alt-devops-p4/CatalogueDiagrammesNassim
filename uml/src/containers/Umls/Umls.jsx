@@ -1,6 +1,6 @@
 'use client'
 import { umlData } from "@/data/Diagram";
-import { CardTitle, Card } from "@/components/Card/Card";
+import { CardTitle, Card, CardPicture } from "@/components/Card/Card";
 
 export const Umls = () => {
     console.table("all", umlData)
@@ -9,7 +9,8 @@ export const Umls = () => {
             {umlData.map((item) => (
                 <>
                     <Card key={item.id}>
-                        <CardTitle > {item.id}. {item.name}</CardTitle>
+                        <CardPicture src={item.picture} alt={item.name} />
+                        <CardTitle> {item.id}. {item.name}</CardTitle>
                     </Card>
                 </>
 
