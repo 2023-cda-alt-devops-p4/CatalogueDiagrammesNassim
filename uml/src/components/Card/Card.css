@@ -4,7 +4,7 @@
 }
 
 .card.sizeM {
-    height: 25vh;
+    height: 40vh;
     /* width: 50vh; */
     cursor: pointer;
 }
@@ -36,7 +36,7 @@
     }
 
     .card.sizeM {
-        height: 25vh;
+        height: 35vh;
         cursor: pointer;
     }
 
@@ -61,7 +61,7 @@
 @media ((min-width: 620px) and (max-width: 1024px)) {
 
     .card.sizeM {
-        height: 25vh;
+        height: 35vh;
         cursor: pointer;
     }
 

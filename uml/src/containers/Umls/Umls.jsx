@@ -11,7 +11,6 @@ export const Umls = () => {
     const [displayModal, setDisplayModal] = useState(null);
 
     const handleModal = (id) => {
-        console.log("id click ", id)
         setDisplayModal(id)
     }
 
