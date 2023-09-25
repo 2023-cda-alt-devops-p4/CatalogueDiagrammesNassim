@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import './Card.css';
 
-export const Card = ({ children, size, design }) => {
+export const Card = ({ children, size, design, }) => {
     return (
         <div className={`card ${size} ${design}`}>
             {children}
