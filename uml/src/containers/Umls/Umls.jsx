@@ -22,7 +22,7 @@ export const Umls = () => {
                         <Card size="sizeM" design="design">
                             <CardPicture src={item.picture} alt={item.name} />
                             <CardPosition center="center">
-                                <CardTitle>  {item.name}</CardTitle>
+                                <CardTitle>  {item.id}. {item.name}</CardTitle>
                                 <Button onClick={() => handleModal(item.id)} variant="variant" size="sizeM"> Plus d'info</Button>
                             </CardPosition>
                         </Card>

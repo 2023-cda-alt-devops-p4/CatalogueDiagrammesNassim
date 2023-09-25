@@ -9,18 +9,20 @@ export const Modal = ({ props, display, onClick }) => {
             <div key={props.id} className="modal">
                 <ModalHeader>
                     <Button onClick={onClick}> X </Button>
+                    <hr />
                     <h1> {props.name} </h1>
                 </ModalHeader>
-                <Image
-                    src={props.picture}
-                    width={200}
-                    height={100}
-                    alt={props.name}
-                />
-                <div className="modal_info">
-
-                    <div> {props.description} </div>
-                </div>
+                <ModalBody>
+                    <Image
+                        src={props.picture}
+                        width={200}
+                        height={100}
+                        alt={props.name}
+                    />
+                </ModalBody>
+                <ModalFooter>
+                    <div> - {props.description} </div>
+                </ModalFooter>
             </div>
         )
 
@@ -28,21 +30,21 @@ export const Modal = ({ props, display, onClick }) => {
 
 export const ModalHeader = ({ children }) => {
     return (
-        <div>
+        <div className="modal_header">
             {children}
         </div>
     )
 }
 export const ModalBody = ({ children }) => {
     return (
-        <div>
+        <div className="modal_body">
             {children}
         </div>
     )
 }
 export const ModalFooter = ({ children }) => {
     return (
-        <div>
+        <div className="modal_footer">
             {children}
         </div>
     )

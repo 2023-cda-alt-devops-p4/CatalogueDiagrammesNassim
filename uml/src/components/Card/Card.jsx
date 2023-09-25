@@ -31,9 +31,9 @@ export const CardTitle = ({ children }) => {
 
 export const CardDescription = ({ children }) => {
     return (
-        <div>
+        <h3>
             {children}
-        </div>
+        </h3>
     )
 }
 export const CardPosition = ({ children, center }) => {
