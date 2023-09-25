@@ -8,3 +8,12 @@
 .modal_footer {
     font-size: x-large;
 }
+
+.modal_header {
+    margin: 10px;
+}
+
+.modal_body {
+    display: flex;
+    justify-content: center;
+}

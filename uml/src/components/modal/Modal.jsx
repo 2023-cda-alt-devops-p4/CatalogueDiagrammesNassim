@@ -8,15 +8,15 @@ export const Modal = ({ props, display, onClick }) => {
         return (
             <div key={props.id} className="modal">
                 <ModalHeader>
-                    <Button onClick={onClick}> X </Button>
+                    <Button variant="btn_closeModal" onClick={onClick}> X </Button>
                     <hr />
                     <h1> {props.name} </h1>
                 </ModalHeader>
                 <ModalBody>
                     <Image
                         src={props.picture}
-                        width={200}
-                        height={100}
+                        width={300}
+                        height={300}
                         alt={props.name}
                     />
                 </ModalBody>
