@@ -15,8 +15,8 @@ export const Modal = ({ props, display, onClick }) => {
                 <ModalBody>
                     <Image
                         src={props.picture}
-                        width={300}
-                        height={300}
+                        width={600}
+                        height={400}
                         alt={props.name}
                     />
                 </ModalBody>
@@ -25,7 +25,6 @@ export const Modal = ({ props, display, onClick }) => {
                 </ModalFooter>
             </div>
         )
-
 }
 
 export const ModalHeader = ({ children }) => {
