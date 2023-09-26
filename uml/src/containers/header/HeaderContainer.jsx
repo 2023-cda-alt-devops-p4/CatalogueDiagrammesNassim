@@ -19,7 +19,7 @@ export const HeaderContainer = () => {
                         <Link href="/uml"> UML </Link>
                     </div>
                     <div className="header_link">
-                        <Link href="/merise"> MERISES</Link>
+                        <Link href="/merise"> MERISE</Link>
                     </div>
                 </div>
 
