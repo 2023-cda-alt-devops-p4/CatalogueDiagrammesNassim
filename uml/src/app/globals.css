@@ -7,3 +7,15 @@
     padding-left: 30px;
     padding-right: 30px;
 }
+
+.h1 {
+    font-family: serif, 'Times New Roman', Times;
+}
+
+.h3 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.word {
+    color: rgba(0, 128, 255, 0.858);
+}

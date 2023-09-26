@@ -1,0 +1,25 @@
+.modal {
+    background-color: rgba(190, 200, 197, 0.44);
+    border: solid 1 red;
+    border-radius: 10px;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 999;
+}
+
+.modal_footer {
+    font-size: x-large;
+}
+
+.modal_header {
+    margin: 10px;
+}
+
+.modal_body {
+    display: flex;
+    justify-content: center;
+}

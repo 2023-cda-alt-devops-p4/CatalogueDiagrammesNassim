@@ -1,22 +1,38 @@
 'use client'
 import './Umls.css';
+import { useState } from 'react';
+import { Modal } from '@/components/modal/Modal';
 import { umlData } from "@/data/Diagram";
 import { CardTitle, Card, CardPicture, CardPosition } from "@/components/Card/Card";
 import { Button } from "@/components/button/Button";
 
 export const Umls = () => {
-    console.table("all", umlData)
+
+    const [displayModal, setDisplayModal] = useState(null);
+
+    const handleModal = (id) => {
+        setDisplayModal(id)
+    }
+
     return (
         <div className="umls_border">
-            <div className="umls_container">
+            <div key="umls" className="umls_container">
                 {umlData.map((item) => (
-                    <Card size="sizeM" design="design" key={item.id}>
-                        <CardPicture src={item.picture} alt={item.name} />
-                        <CardPosition center="center">
-                            <CardTitle>  {item.name}</CardTitle>
-                            <Button variant="variant" size="sizeM"> Plus d'info</Button>
-                        </CardPosition>
-                    </Card>
+                    <div key={item.id}>
+                        <Card size="sizeM" design="design">
+                            <CardPicture src={item.picture} alt={item.name} />
+                            <CardPosition center="center">
+                                <CardTitle>  {item.id}. {item.name}</CardTitle>
+                                <Button onClick={() => handleModal(item.id)} variant="variant" size="sizeM"> Plus d'info</Button>
+                            </CardPosition>
+                        </Card>
+                        <Modal
+                            display={displayModal}
+                            props={item}
+                            onClick={() => handleModal()}
+                            id={item.id}
+                        />
+                    </div>
                 ))}
             </div>
         </div>

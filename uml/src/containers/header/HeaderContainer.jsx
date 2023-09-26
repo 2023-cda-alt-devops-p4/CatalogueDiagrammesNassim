@@ -16,10 +16,10 @@ export const HeaderContainer = () => {
                         <Link href="/"> Accueil</Link>
                     </div>
                     <div className="header_link">
-                        <Link href="/UMLS"> UML</Link>
+                        <Link href="/uml"> UML </Link>
                     </div>
                     <div className="header_link">
-                        <Link href="/Merises"> MERISES</Link>
+                        <Link href="/merise"> MERISE</Link>
                     </div>
                 </div>
 
