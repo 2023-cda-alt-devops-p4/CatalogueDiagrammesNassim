@@ -1,0 +1,32 @@
+.merise_learn {
+    display: flex;
+    margin-top: 5em;
+    padding: 20px;
+}
+
+.merises {
+    padding-left: 10px;
+
+}
+
+.word {
+    color: rgba(0, 128, 255, 0.858);
+}
+
+.merises {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+@media (min-width: 350px) and (max-width: 767px) {
+    .merise_learn {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .merise_picture {
+        padding-top: 50px;
+    }
+}
