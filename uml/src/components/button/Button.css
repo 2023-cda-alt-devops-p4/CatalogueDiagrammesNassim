@@ -2,6 +2,8 @@
     border-radius: 10%;
     background-color: rgba(60, 132, 210, 0.844);
     color: white;
+    border-style: none;
+    cursor: pointer;
 }
 
 .btn.sizeM {
@@ -10,5 +12,6 @@
 }
 
 .btn_closeModal {
+    border-style: none;
     background-color: rgb(232, 129, 129);
 }
