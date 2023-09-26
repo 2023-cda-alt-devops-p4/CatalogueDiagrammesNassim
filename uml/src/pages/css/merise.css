@@ -1,12 +1,20 @@
 .merise_learn {
     display: flex;
-    margin-top: 5em;
+    margin-top: 3em;
+    align-items: center;
     padding: 20px;
 }
 
 .merises {
     padding-left: 10px;
 
+
+}
+
+.container_merise {
+    margin-top: 5em;
+    margin-right: 3em;
+    margin-left: 3em;
 }
 
 .word {
