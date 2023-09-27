@@ -7,6 +7,8 @@ export default function Home() {
     <main>
       <HeaderContainer />
       <div className="page_border">
+        <h1>
+        </h1>Projet Catalogue : Viens découvrir
         <UmlRandom />
       </div>
     </main>

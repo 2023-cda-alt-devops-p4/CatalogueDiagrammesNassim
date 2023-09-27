@@ -18,7 +18,8 @@
 
 .btn.random {
     background: none;
-    border: 2px solid;
+    border: 1px solid blue;
+    border-radius: 10px;
     font: inherit;
     line-height: 1;
     cursor: pointer;

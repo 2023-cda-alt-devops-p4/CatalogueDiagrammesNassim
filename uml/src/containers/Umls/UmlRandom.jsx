@@ -21,8 +21,8 @@ export const UmlRandom = () => {
 
     if (resultRandom)
         return (
-            <>
-                <div className="uml_random_container">
+            <div className="uml_container">
+                <div className="uml_random_">
                     <Card>
                         <CardPosition center="uml">
                             <CardPicture src={resultRandom.picture} alt="picture uml" />
@@ -31,7 +31,7 @@ export const UmlRandom = () => {
                     </Card>
                 </div>
                 <Button variant="random" onClick={() => randomUml()}> Random </Button>
-            </>
+            </div>
         )
     return (
 
