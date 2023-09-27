@@ -1,7 +1,7 @@
 .modal {
-    background-color: rgba(190, 200, 197, 0.44);
+    background-color: rgba(0, 0, 0, 0.751);
     border: solid 1 red;
-    border-radius: 10px;
+    color: rgba(255, 255, 255, 0.953);
     padding: 20px;
     position: fixed;
     top: 0;

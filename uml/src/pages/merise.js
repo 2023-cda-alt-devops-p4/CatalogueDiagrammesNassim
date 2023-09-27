@@ -3,6 +3,16 @@ import '../pages/css/merise.css';
 import Image from 'next/image'
 import ImgMerise from '../../public/Merise.jpg';
 
+const infoMerise = [
+    {
+        id: 1,
+        info: "Merise est apparue avant UML en France (70's) et UML est Américaine (90's)"
+    },
+    {
+        id: 2,
+        info: "Merise est très bien adaptée à la modélisation des bases de données relationnelles"
+    }
+]
 const merise = () => {
     return (
         <>
@@ -21,7 +31,10 @@ const merise = () => {
                     <div className="merise_picture">
                         <Image src={ImgMerise} height={250} width={500} alt="merise" />
                     </div>
-
+                </div>
+                <hr className="separator" />
+                <div>
+                    <ul> Merise est apparue avant UML en France (70's) et UML est Américaine (90's)</ul>
                 </div>
             </div>
         </>

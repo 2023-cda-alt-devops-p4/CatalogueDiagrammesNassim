@@ -25,6 +25,10 @@
     font-family: 'Courier New', Courier, monospace;
 }
 
+.separator {
+    width: 50%;
+}
+
 @media (min-width: 350px) and (max-width: 767px) {
     .merise_learn {
         display: flex;

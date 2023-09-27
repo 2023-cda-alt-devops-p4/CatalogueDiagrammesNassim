@@ -1,5 +1,5 @@
-
 import { HeaderContainer } from "@/containers/header/HeaderContainer"
+import './globals.css';
 
 export default function Home() {
   return (
