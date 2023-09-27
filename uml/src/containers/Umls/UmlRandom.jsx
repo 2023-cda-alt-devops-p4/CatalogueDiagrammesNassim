@@ -1,29 +1,36 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useLayoutEffect, useState } from "react";
 import { umlData } from "@/data/Diagram";
 import { Button } from "@/components/button/Button";
 import { Card, CardDescription, CardPicture } from "@/components/Card/Card";
 export const UmlRandom = () => {
-    const [dataUml] = useState(umlData);
+    // const [dataUml] = useState(umlData);
     const [resultRandom, setResultRandom] = useState([]);
 
-    const randomUml = async () => {
-        let random = Math.floor(Math.random() * dataUml.length);
-        setResultRandom(dataUml[random]);
-        return await resultRandom;
+    const randomUml = () => {
+        let random = Math.floor(Math.random() * umlData.length - 1);
+        setResultRandom(umlData[random]);
+        return resultRandom;
     }
 
-    useEffect(() => {
+    useLayoutEffect(() => {
         randomUml();
     }, [])
 
+    if (resultRandom)
+        return (
+            <div className="uml_random_contaner">
+                <Card>
+                    <CardPicture src={resultRandom.picture} alt="picture uml" />
+                    <CardDescription> {resultRandom.description}</CardDescription>
+                </Card>
+                <Button onClick={() => randomUml()}> Random </Button>
 
+            </div>
+        )
     return (
-        <div className="uml_random_contaner">
-            <Button onClick={() => randomUml()}> Random </Button>
-            <Card>
 
-            </Card>
+        <div>   Loadding...
 
         </div>
     )
