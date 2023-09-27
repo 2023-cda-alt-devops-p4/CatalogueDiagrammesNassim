@@ -6,11 +6,15 @@ import ImgMerise from '../../public/Merise.jpg';
 const infoMerise = [
     {
         id: 1,
-        info: "Merise est apparue avant UML en France (70's) et UML est Américaine (90's)"
+        info: "Merise est apparue avant UML en France (70's) et UML en Amérique (90's)"
     },
     {
         id: 2,
-        info: "Merise est très bien adaptée à la modélisation des bases de données relationnelles"
+        info: "Merise est orienté relationnel ( UML orienté Objet )"
+    },
+    {
+        id: 3,
+        info: ""
     }
 ]
 const merise = () => {
@@ -33,8 +37,13 @@ const merise = () => {
                     </div>
                 </div>
                 <hr className="separator" />
-                <div>
-                    <ul> Merise est apparue avant UML en France (70's) et UML est Américaine (90's)</ul>
+
+
+                <div className="merise_difference">
+                    <h3 className="title_merise"> La différence de MERISE a UML</h3>
+                    <ul> {infoMerise.map((merise) => (
+                        <li key={merise.id}> {merise.info}</li>
+                    ))}</ul>
                 </div>
             </div>
         </>

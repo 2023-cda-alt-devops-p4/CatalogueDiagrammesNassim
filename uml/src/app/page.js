@@ -1,4 +1,5 @@
 import { HeaderContainer } from "@/containers/header/HeaderContainer"
+import { UmlRandom } from "@/containers/Umls/UmlRandom";
 import './globals.css';
 
 export default function Home() {
@@ -6,7 +7,7 @@ export default function Home() {
     <main>
       <HeaderContainer />
       <div className="page_border">
-        Page Home
+        <UmlRandom />
       </div>
     </main>
   )

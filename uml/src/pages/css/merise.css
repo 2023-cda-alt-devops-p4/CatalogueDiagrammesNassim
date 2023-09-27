@@ -25,8 +25,20 @@
     font-family: 'Courier New', Courier, monospace;
 }
 
+.merise_difference {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .separator {
     width: 50%;
+}
+
+.title_merise {
+    font-size: 30px;
+    font-family: "droid"
 }
 
 @media (min-width: 350px) and (max-width: 767px) {
