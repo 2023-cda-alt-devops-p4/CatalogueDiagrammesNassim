@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import Logo from '../../../public/uml-logo.jpg'
+import Burger from '../../../public/burger.jpg'
 import './Header.css';
 
 export const Header = ({ children }) => {
@@ -14,7 +14,7 @@ export const Header = ({ children }) => {
 export const HeaderLogo = () => {
     return (
         <Image
-            src={Logo}
+            src={Burger}
             width={100}
             height={100}
             alt="Logo"
