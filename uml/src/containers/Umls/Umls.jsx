@@ -20,8 +20,8 @@ export const Umls = () => {
                 {umlData.map((item) => (
                     <div key={item.id}>
                         <Card size="sizeM" design="design">
-                            <CardPicture src={item.picture} alt={item.name} />
                             <CardPosition center="center">
+                                <CardPicture src={item.picture} alt={item.name} />
                                 <CardTitle>  {item.id}. {item.name}</CardTitle>
                                 <Button onClick={() => handleModal(item.id)} variant="variant" size="sizeM"> Plus d'info</Button>
                             </CardPosition>

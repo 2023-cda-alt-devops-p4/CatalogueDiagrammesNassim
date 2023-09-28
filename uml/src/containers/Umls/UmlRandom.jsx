@@ -1,6 +1,6 @@
 "use client";
-import './Umls.css';
-import { useLayoutEffect, useState } from "react";
+import './UmlRandom.css';
+import { useEffect, useState } from "react";
 import { umlData } from "@/data/Diagram";
 import { Button } from "@/components/button/Button";
 import { Card, CardDescription, CardPicture, CardPosition } from "@/components/Card/Card";
@@ -15,9 +15,9 @@ export const UmlRandom = () => {
         return resultRandom;
     }
 
-    useLayoutEffect(() => {
+    useEffect(() => {
         randomUml();
-    }, [])
+    }, [resultRandom])
 
     if (resultRandom)
         return (
@@ -26,7 +26,7 @@ export const UmlRandom = () => {
                     <Card>
                         <CardPosition center="uml">
                             <CardPicture src={resultRandom.picture} alt="picture uml" />
-                            <CardDescription> Le {resultRandom.name} </CardDescription>
+                            <div className="uml_random_name"> Le {resultRandom.name} </div>
                         </CardPosition>
                     </Card>
                 </div>
