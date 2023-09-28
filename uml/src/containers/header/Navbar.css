@@ -1,9 +1,25 @@
-.header_container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
+.nav_center {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
     z-index: 999;
-    color: white;
+
+}
+
+.nav_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 30px;
+}
+
+.nav_logo {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.nav_link {
+    margin: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
 }

@@ -1,21 +1,18 @@
 import Link from "next/link"
-import './HeaderLinks.css';
+import './Navbar.css';
 
 
-export const Navbar = ({ props, onClick }) => {
-    if (props === true)
+export const Navbar = ({ open }) => {
+    if (open === true)
         return (
-            <div className="header_container">
-
-
-
-                <div className="header_link">
+            <div className="nav_container">
+                <div className="nav_link">
                     <Link href="/"> Accueil</Link>
                 </div>
-                <div className="header_link">
+                <div className="nav_link">
                     <Link href="/uml"> UML </Link>
                 </div>
-                <div className="header_link">
+                <div className="nav_link">
                     <Link href="/merise"> MERISE</Link>
                 </div>
             </div>

@@ -1,4 +1,7 @@
 .uml_container {
+    position: relative;
+    top: 0;
+    left: 0;
     display: flex;
     display: flex;
     cursor: pointer;

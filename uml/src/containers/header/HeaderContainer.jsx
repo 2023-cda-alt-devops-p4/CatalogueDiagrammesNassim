@@ -1,36 +1,45 @@
 "use client";
 import './HeaderContainer.css';
 import { useState, useEffect } from "react";
-import { Header } from "@/components/Header/Header"
 import { Navbar } from "@/containers/header/Navbar";
 
 export const HeaderContainer = () => {
-    const [navbarOpen, setNavbarOpen] = useState(false);
 
-    const handleNav = () => {
-        setNavbarOpen(!navbarOpen);
-        console.log("state change", navbarOpen)
+    const [burger_class, setBurgerClass] = useState("burger-bar unclicked")
+    const [menu_class, setMenuClass] = useState("menu hidden")
+    const [isMenuClicked, setIsMenuClicked] = useState(false)
+
+
+    console.log("clicked", isMenuClicked);
+
+    const updateMenu = () => {
+        if (!isMenuClicked) {
+            setBurgerClass("burger-bar clicked")
+            setMenuClass("menu visible")
+        }
+        else {
+            setBurgerClass("burger-bar unclicked")
+            setMenuClass("menu hidden")
+        }
+        setIsMenuClicked(!isMenuClicked)
     }
-    useEffect(() => {
-        handleNav();
-    }, [])
+
+
 
     return (
-        <>
-            <div style={{ width: '100%', height: '100vh' }}>
-                <nav>
-                    <div className="burger-menu" onClick={updateMenu}>
-                        <div className={burger_class} ></div>
-                        <div className={burger_class} ></div>
-                        <div className={burger_class} ></div>
-                    </div>
-                </nav>
+        <div className="container_header">
+            <nav>
+                <div className="burger-menu" onClick={() => updateMenu()}>
+                    <div className={burger_class} ></div>
+                    <div className={burger_class} ></div>
+                    <div className={burger_class} ></div>
+                </div>
+            </nav>
 
-                <div className={menu_class}></div>
+            <div className={menu_class}>
+                <Navbar open={isMenuClicked} />
             </div>
-            <Header>
-                <Navbar props={navbarOpen} onClick={handleNav} />
-            </Header>
-        </>
+
+        </div>
     )
 }
