@@ -27,7 +27,8 @@ export const HeaderContainer = () => {
 
 
     return (
-        <div className="container_header">
+        <>
+
             <nav>
                 <div className="burger-menu" onClick={() => updateMenu()}>
                     <div className={burger_class} ></div>
@@ -40,6 +41,6 @@ export const HeaderContainer = () => {
                 <Navbar open={isMenuClicked} />
             </div>
 
-        </div>
+        </>
     )
 }

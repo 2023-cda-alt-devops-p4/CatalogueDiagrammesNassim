@@ -10,7 +10,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 30px;
+    align-items: center;
+
 }
 
 .nav_logo {
