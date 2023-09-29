@@ -33,8 +33,8 @@ export const Merise = [
     },
     {
         id: 6,
-        type: "MOT",
-        merise: "Modèle organisationnel des traitements",
+        type: "MCT",
+        merise: "Modèle conceptuel des traitements",
         description: "Ce modèle décrit l'organisation des traitements du système d'information."
     },
     {
