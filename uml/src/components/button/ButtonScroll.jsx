@@ -1,3 +1,4 @@
+"use client";
 import { Button } from "./Button";
 import './ButtonScroll.css';
 
@@ -5,13 +6,15 @@ export const ButtonScroll = () => {
 
     const handleClickScroll = () => {
         window.scrollTo({
-            top: 100,
-            left: 100,
+            top: 0,
+            left: 0,
             behavior: "smooth",
         })
     }
 
     return (
-        <Button className="btn_scroll" onClick={() => handleClickScroll()}> V </Button>
+        <div className="btn_scroll_position">
+            <Button variant="scroll" onClick={() => handleClickScroll()}> V </Button>
+        </div>
     )
 }
