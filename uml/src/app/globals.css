@@ -3,9 +3,20 @@
     margin: 0;
 } */
 
-.page_border {
+/* .page_border {
     padding-left: 30px;
     padding-right: 30px;
+} */
+
+.page_center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.span_title {
+    color: rgb(125 102 240);
 }
 
 .h1 {

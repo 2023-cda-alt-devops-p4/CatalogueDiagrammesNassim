@@ -1,6 +1,6 @@
 .btn.variant {
     border-radius: 10%;
-    background-color: rgba(60, 132, 210, 0.844);
+    background-color: rgb(125 102 240);
     color: white;
     border-style: none;
     cursor: pointer;
@@ -29,5 +29,5 @@
 }
 
 .btn.random:hover {
-    background-color: #4681f4;
+    background-color: rgb(125 102 240)
 }

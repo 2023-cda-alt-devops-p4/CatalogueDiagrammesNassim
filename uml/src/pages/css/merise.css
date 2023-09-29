@@ -1,20 +1,26 @@
 .merise_learn {
     display: flex;
-    margin-top: 3em;
+    margin-top: 1em;
     align-items: center;
-    padding: 20px;
 }
 
 .merises {
     padding-left: 10px;
-
-
 }
 
 .container_merise {
     margin-top: 5em;
     margin-right: 3em;
     margin-left: 3em;
+}
+
+.merise_type {
+    font-size: 20px;
+}
+
+.merise_description {
+    font-size: 15px;
+    list-style: none;
 }
 
 .word {

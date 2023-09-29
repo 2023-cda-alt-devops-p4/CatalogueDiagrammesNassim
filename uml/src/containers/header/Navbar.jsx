@@ -7,13 +7,13 @@ export const Navbar = ({ open }) => {
         return (
             <div className="nav_container">
                 <div className="nav_link">
-                    <Link href="/"> Accueil</Link>
+                    <Link className="link" href="/"> Accueil</Link>
                 </div>
                 <div className="nav_link">
-                    <Link href="/uml"> UML </Link>
+                    <Link className="link" href="/uml"> UML </Link>
                 </div>
                 <div className="nav_link">
-                    <Link href="/merise"> MERISE</Link>
+                    <Link className="link" href="/merise"> MERISE</Link>
                 </div>
             </div>
         )

@@ -26,7 +26,7 @@ export const UmlRandom = () => {
                     <Card>
                         <CardPosition center="uml">
                             <CardPicture src={resultRandom.picture} alt="picture uml" />
-                            <div className="uml_random_name"> Le {resultRandom.name} </div>
+                            <div className="uml_random_name"> (UML) {resultRandom.name}  </div>
                         </CardPosition>
                     </Card>
                 </div>

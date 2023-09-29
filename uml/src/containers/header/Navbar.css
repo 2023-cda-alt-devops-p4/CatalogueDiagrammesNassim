@@ -14,6 +14,17 @@
 
 }
 
+.link {
+    font-size: 20px;
+    text-decoration: none;
+    color: black
+}
+
+.link:hover {
+    transition: 0.5s;
+    font-size: 25px;
+}
+
 .nav_logo {
     display: flex;
     justify-content: flex-start;
