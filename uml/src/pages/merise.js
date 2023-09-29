@@ -3,7 +3,7 @@ import '../pages/css/merise.css';
 import Image from 'next/image'
 import ImgMerise from '../../public/Merise.jpg';
 import { Merise } from "@/data/Merise";
-
+import { Card, CardDescription, CardTitle } from "@/components/Card/Card";
 const merise = () => {
     return (
         <>
@@ -29,10 +29,10 @@ const merise = () => {
                 <div className="merise_difference">
                     <h3 className="title_merise"> Les différents méthodes de merises existante : </h3>
                     <ul> {Merise.map((merise) => (
-                        <>
-                            <li className="merise_type" key={merise.id}> {merise.merise} ({merise.type})</li>
-                            <li className="merise_description">{merise.description}</li>
-                        </>
+                        <Card>
+                            <CardTitle className="merise_type" key={merise.id}> {merise.merise} ({merise.type})</CardTitle>
+                            <CardDescription className="merise_description">{merise.description}</CardDescription>
+                        </Card>
                     ))}</ul>
                 </div>
             </div>

@@ -5,12 +5,10 @@ import { Navbar } from "@/containers/header/Navbar";
 
 export const HeaderContainer = () => {
 
-    const [burger_class, setBurgerClass] = useState("burger-bar unclicked")
-    const [menu_class, setMenuClass] = useState("menu hidden")
-    const [isMenuClicked, setIsMenuClicked] = useState(false)
+    const [burger_class, setBurgerClass] = useState("burger-bar unclicked");
+    const [menu_class, setMenuClass] = useState("menu hidden");
+    const [isMenuClicked, setIsMenuClicked] = useState(false);
 
-
-    console.log("clicked", isMenuClicked);
 
     const updateMenu = () => {
         if (!isMenuClicked) {

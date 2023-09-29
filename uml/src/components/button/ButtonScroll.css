@@ -1,0 +1,11 @@
+.btn_scroll {
+    position: "fixed";
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    background-color: "#fff";
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: "pointer";
+}

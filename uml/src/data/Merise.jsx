@@ -1,10 +1,11 @@
+
+
 export const Merise = [
     {
         id: 1,
         type: "MCD",
         merise: "Modèle conceptuel des données",
-        description: "Ce modèle décrit les données du système d'information en termes de concepts et de relations entre ces concepts."
-
+        description: "Ce modèle décrit les données du système d'information en termes de concepts et de relations entre ces concepts.",
     },
     {
         id: 2,
@@ -49,6 +50,4 @@ export const Merise = [
         merise: "Modèle de traitements applicatifs ",
         description: "Ce modèle décrit les traitements spécifiques aux applications du système d'information."
     },
-
-
 ]
