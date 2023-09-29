@@ -1,6 +1,9 @@
 "use client";
 import { Button } from "./Button";
 import './ButtonScroll.css';
+import { BsFillArrowUpCircleFill } from "react-icons/bs"
+
+
 
 export const ButtonScroll = () => {
 
@@ -14,7 +17,7 @@ export const ButtonScroll = () => {
 
     return (
         <div className="btn_scroll_position">
-            <Button variant="scroll" onClick={() => handleClickScroll()}> V </Button>
+            <Button variant="scroll" onClick={() => handleClickScroll()}> <BsFillArrowUpCircleFill /> </Button>
         </div>
     )
 }
