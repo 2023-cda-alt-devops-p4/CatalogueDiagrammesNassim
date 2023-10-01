@@ -30,7 +30,7 @@ const merise = () => {
                     <h3 className="title_merise"> Les différents méthodes de merises existante : </h3>
                     <ul> {Merise.map((merise) => (
                         <Card>
-                            <CardTitle className="merise_type" key={merise.id}> {merise.merise} ({merise.type})</CardTitle>
+                            <CardTitle className="merise_type" key={merise.id}> {merise.id}. {merise.merise} ({merise.type})</CardTitle>
                             <CardDescription className="merise_description">{merise.description}</CardDescription>
                         </Card>
                     ))}</ul>
