@@ -1,25 +1,42 @@
 import { HeaderContainer } from "@/containers/header/HeaderContainer";
-import '../app/globals.css';
-
+import '../pages/css/merise.css';
+import Image from 'next/image'
+import ImgMerise from '../../public/Merise.jpg';
+import { Merise } from "@/data/Merise";
+import { Card, CardDescription, CardTitle } from "@/components/Card/Card";
 const merise = () => {
     return (
-        <div className="container_merise">
+        <>
             <HeaderContainer />
-            <div className="merise_word">
-                <span className="word"> M</span>éthode d'<span className="word">E</span>tude et de <span className="word">R</span>éalisation <span className="word">I</span>nformatique des <span className="word">S</span>ystème d'<span className="word">E</span>ntreprise
-            </div>
-            <div className="learn_merise">
-
-                <h3 className=""> Un peu de lecture pour comprendre merise :  </h3>
-
-                <div className="merises"> La méthode MERISE date de 1978-1979, et fait suite à une consultation nationale lancée en 1977 par le ministère de l'Industrie dans le but de choisir des
-                    sociétés de conseil en informatique afin de définir une méthode de conception de systèmes d'information.
-                    Les deux principales sociétés ayant mis au point cette méthode sont le CTI (Centre Technique d'Informatique)
-                    chargé de gérer le projet, et le CETE (Centre d'Etudes Techniques de l'Equipement) implanté à Aix-en-Provence.
+            <div className="container_merise">
+                <div className="merise_word">
+                    <span className="word"> M</span>éthode d'<span className="word">E</span>tude et de <span className="word">R</span>éalisation <span className="word">I</span>nformatique des <span className="word">S</span>ystème d'<span className="word">E</span>ntreprise :
                 </div>
 
+                <h2> Comprendre l'histoire de Merise : </h2>
+                <div className="merise_learn">
+                    <div className="merises"> La méthode MERISE date de 1978-1979, et fait suite à une consultation nationale lancée en 1977 par le ministère de l'Industrie dans le but de choisir des
+                        sociétés de conseil en informatique afin de définir une méthode de conception de systèmes d'information. C'est une methode Francaise
+                        Merise est une  méthode qui a pour but de réaliser une application informatique permettant d'automatiser les tâches et les activités d'une entreprise.
+                    </div>
+                    <div className="merise_picture">
+                        <Image src={ImgMerise} height={250} width={500} alt="merise" />
+                    </div>
+                </div>
+                <hr className="separator" />
+
+
+                <div className="merise_difference">
+                    <h3 className="title_merise"> Les différents méthodes de merises existante : </h3>
+                    <ul> {Merise.map((merise) => (
+                        <Card>
+                            <CardTitle className="merise_type" key={merise.id}> {merise.id}. {merise.merise} ({merise.type})</CardTitle>
+                            <CardDescription className="merise_description">{merise.description}</CardDescription>
+                        </Card>
+                    ))}</ul>
+                </div>
             </div>
-        </div>
+        </>
     )
 }
 

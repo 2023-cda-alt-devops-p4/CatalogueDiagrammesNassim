@@ -1,0 +1,37 @@
+.nav_center {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    z-index: 999;
+
+}
+
+.nav_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.link {
+    font-size: 20px;
+    text-decoration: none;
+    color: black
+}
+
+.link:hover {
+    transition: 0.5s;
+    font-size: 25px;
+}
+
+.nav_logo {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.nav_link {
+    margin: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+}

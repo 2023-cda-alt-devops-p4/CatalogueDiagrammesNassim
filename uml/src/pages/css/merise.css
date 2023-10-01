@@ -1,0 +1,62 @@
+.merise_learn {
+    display: flex;
+    margin-top: 1em;
+    align-items: center;
+}
+
+.merises {
+    padding-left: 10px;
+}
+
+.container_merise {
+    margin-top: 5em;
+    margin-right: 3em;
+    margin-left: 3em;
+}
+
+.merise_type {
+    font-size: 20px;
+}
+
+.merise_description {
+    font-size: 15px;
+    list-style: none;
+}
+
+.word {
+    color: rgba(0, 128, 255, 0.858);
+}
+
+.merises {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.merise_difference {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.separator {
+    width: 50%;
+}
+
+.title_merise {
+    font-size: 30px;
+    font-family: "droid"
+}
+
+@media (min-width: 350px) and (max-width: 767px) {
+    .merise_learn {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .merise_picture {
+        padding-top: 50px;
+    }
+}
